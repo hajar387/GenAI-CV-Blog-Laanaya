@@ -25,20 +25,20 @@ Créer une image à partir d'un texte
 
 Le Generative AI est utilisé pour plusieurs raisons importantes :
 
-1.Création de contenu :
+#### 1.Création de contenu :
 Génération d'images , avatars , logos et aide au design , ...
 
-2.Augmentation de données : 
+#### 2.Augmentation de données : 
 Générer de nouvelles images  pour entrainer les modeles . 
 Par exemple : créer des images médicales pour améliorer un modeles .
 
-3.Application dans les industries :
+#### 3.Application dans les industries :
 Jeux vidéo (création de personnages ) ,cinéma (effets spéciaux) , ...
 
-4.E-commerce et marketing :
+#### 4.E-commerce et marketing :
 Essayage virtuel , Génération d'images de produits , ...
 
-5.Céativité assistée :
+#### 5.Céativité assistée :
 Aider les designers , générer rapidement des idées visuelles , ...
 
 
