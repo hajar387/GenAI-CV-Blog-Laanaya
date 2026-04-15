@@ -117,6 +117,33 @@ Comme un résumé + réécriture :
 -faire  un résumé 
 -réécrire une version dasée sur ce résumé 
 
+### Diffusion Models :
+
+C'est une méthode en 2 étapes :
+
+#### 1.Forward process ( Ajout de bruit ) : On prend une image réelle , puis on ajoute du bruit petit à petit jusqu'à obtenir du bruit total . 
+Donc l'image devient completement illisible 
+
+#### 2.Reverse process ( Débruitage ) : La modele apprend à enlever le bruit étape par étape , puis il construit une image propre 
+
+<img width="1593" height="408" alt="image" src="https://github.com/user-attachments/assets/b56fc4ec-f62e-4e48-b9cd-bcd243ceb49d" />
+
+### Analogie : 
+
+C'est comme une image tres floue que on nettoient petit à petit jusqu'à la redre claire 
+
+## 4.Comparaison simple :
+
+<img width="1225" height="340" alt="image" src="https://github.com/user-attachments/assets/308527cd-6159-4bf8-b2e5-f16b009a398c" />
+
+<img width="1069" height="727" alt="image" src="https://github.com/user-attachments/assets/55e7c92d-327c-4e48-b5d7-12561a72c1ea" />
+
+
+
+
+
+
+
 
 
 
