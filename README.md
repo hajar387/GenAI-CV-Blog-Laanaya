@@ -25,21 +25,98 @@ Créer une image à partir d'un texte
 
 Le Generative AI est utilisé pour plusieurs raisons importantes :
 
-#### 1.Création de contenu :
+#### Création de contenu :
 Génération d'images , avatars , logos et aide au design , ...
 
-#### 2.Augmentation de données : 
+#### Augmentation de données : 
 Générer de nouvelles images  pour entrainer les modeles . 
 Par exemple : créer des images médicales pour améliorer un modeles .
 
-#### 3.Application dans les industries :
+#### Application dans les industries :
 Jeux vidéo (création de personnages ) ,cinéma (effets spéciaux) , ...
 
-#### 4.E-commerce et marketing :
+#### E-commerce et marketing :
 Essayage virtuel , Génération d'images de produits , ...
 
-#### 5.Céativité assistée :
+#### Céativité assistée :
 Aider les designers , générer rapidement des idées visuelles , ...
+
+## 3.Les architectures principales (ELI5) et la difference entre eux :
+
+Il existe 3 grandes méthodes en Generative AI pour créer des images :
+
+GAN (Generative Adversarial Network)
+
+VAE (Variational AutoEndoder)
+
+Diffusion Models 
+
+Chaque modele a une facon différente de générer des images .
+
+### GAN (Generative Adversarial Network) :
+
+Le GAN contient 2 réseaux de neurones qui s'entrainent en meme temps :
+
+#### 1.Generatore ( le créateur ) : Il prend du bruit aléatoire . puis il essaie de créer une image réaliste . Au début , ses images sont mauvaises .
+
+#### 2.Discriminator ( le juge ) : Il recoit des vraies images et des images générées , et il doit dire : vrai ou faut .
+
+#### Comment ils aaprennent ?
+
+C'est un jeu d'amélioration continue :
+
+1. Generator crée une image
+2. Discriminator dit c'est faux
+3. Generator aprend de ses erreurs
+4. Generator devient meilleur
+5. Discriminator devient aussi meilleur
+
+=> Dans le résultat on a une compétition permanante
+
+<img width="1310" height="649" alt="image" src="https://github.com/user-attachments/assets/8f2a3d40-a7ba-4de9-9e05-1f706c2075f2" />
+
+
+#### Analogie :
+
+Comme un faux-monnayeur et un policier : 
+
+- le faux-monnayeur fabrique de faux bilets
+- le policier essaie de la détecter
+
+Avec le temps : 
+Le faussaire essaie de tromper le policier , et le policier devient de plus en plus intelligent ,
+
+- Résulat : les faux billets deviennent tres réalistes
+
+### VAE (Variational AutoEndoder) :
+
+Le VAE fonctionne avec 2 parties principales : 
+
+#### 1.Encoder : Prend une image , et la transforme en représentation compressée ( latent space ) comme un résumé 
+
+#### 2.Decoder : Prend ce résumé et reconstruit une image 
+
+=> Contrairement à GAN : VAE ne copie pas directement , il apprend une distribution de données .
+
+<img width="1556" height="590" alt="image" src="https://github.com/user-attachments/assets/320286b8-fd16-43ac-94c7-027ccb6891cd" />
+
+
+#### latent space :
+
+C'est un espace magique ou : chaque image est un point , les images similaires sont proches .
+
+Par exemple : Visages souriants proches des visages sourients , visages  tristes proches des visages tristes 
+
+<img width="1395" height="630" alt="image" src="https://github.com/user-attachments/assets/18225463-19aa-4421-afce-6e79788b8de3" />
+
+
+#### Analogie : 
+Comme un résumé + réécriture : 
+
+-lire un livre 
+-faire  un résumé 
+-réécrire une version dasée sur ce résumé 
+
 
 
 
